@@ -1,0 +1,77 @@
+<!DOCTYPE html/>
+<html lang="es">
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="../assets/images/favicon-32x32.png"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Sobre nosotros</title>
+    </head>
+    <!-- BODY -->
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header__content">
+            <a href="../index.html"><img class="header__content-logo" src="../assets/images/logo-nombre.jpg" alt="LOGO"/></a>
+            <!-- BARRA DE NAVEGACION -->
+                <nav>
+                    <input type="checkbox" id="burger-menu">
+                    <label for="burger-menu"> ☰ </label>
+                    <ul class="header__content-navbar">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./service.html">Servicios</a></li>
+                        <li><a href="./product.html">Productos</a></li>
+                        <li><a href="./location.html">Ubicación</a></li>
+                        <li><a href="./contact.html">Contacto</a></li>
+                        <li><a href="./about-us.html">Sobre nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- MAIN -->
+        <main>
+            <!-- SECCION CONTACTO -->
+            <section class="contact">
+                <h1 class="title">Contactanos</h1>
+                <!-- FORMULARIO -->
+                <form action="#" class="contact-form">
+                    <!-- CAMPOS A COMPLETAR -->
+                    <label for="name">Nombre y Apellido:
+                        <input class="contact__input" type="text" placeholder="Nombre y Apellido"/><br/>
+                    </label>
+                    <label for="email">Correo:
+                        <input class="contact__input"  type="email" placeholder="user@domain.com" name="email"/><br/>
+                    </label>
+                    <label for="consulta"> Tu consulta:<br/>
+                        <textarea class="contact__input"  placeholder="Consulta"></textarea>
+                    </label> <br/>
+                    <!-- SELECCION -->
+                    <div><p>Tipo de consulta:</p>
+                        <div>Venta
+                            <input class="contact__input"  type="radio" name="lado" value="vta"/>
+                        </div>
+                        <div>Soporte tecnico
+                            <input class="contact__input"  type="radio" name="lado" value="st"/>
+                        </div><br/>
+                    </div>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="RESETEAR">
+                </form>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <a href="./contact.html"><h3>Contactanos</h3></a>
+            <img class="footer__logo" src="../assets/images/logo.jpg" alt="LOGO"/>
+            <ul class="footer__contact">
+                <li>@casacentralst</li>
+                <li>#0351 867-1488</li>
+                <li>Dean Funes 52 - Galería Pasaje Central Local G10.</li>
+                <li>Córdoba, Argentina.</li>
+                <li>Lun a Vie 09:00 - 18:00hs Sab 09:00 - 13:00hs</li>
+            </ul>
+        </footer>
+    </body>
+</html>
