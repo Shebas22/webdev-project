@@ -17,7 +17,7 @@
 
 
 a:link {color: #f0b953; font-size: 22pt;  text-decoration: none }
-a:hover {color: #f0b953; font-size: 22pt;  text-decoration: none }
+a:hover {color: #f0b953; font-size: 22pt;  text-decoration: none; cursor: pointer; }
 a:visited {color: #f0b953; font-size: 22pt; text-decoration: none }
 
 .menu_bar{
@@ -30,10 +30,10 @@ a:visited {color: #f0b953; font-size: 22pt; text-decoration: none }
     /* BODY */
 
 body {
-    background-color:#c6ceca;
+    background-image: linear-gradient(#c6ceca,rgb(84, 72, 99));
     font-size: 40px;
     display: grid;
-    height: 100vh;
+    /* height: 100vh; */
     grid-template-areas: 
         "encabezado   encabezado  encabezado"
         "contenido    contenido   contenido"
@@ -93,7 +93,7 @@ body {
 
 main{
     grid-area: contenido;
-
+    margin: auto;
     justify-content: center;
     align-items: center;
 }
@@ -210,14 +210,14 @@ form{
 .aboutus__img{
     width: 75%;
     height: 50%;
+    /* filter: brightness(1.1);
+    mix-blend-mode: multiply; */
 }
 
 .aboutus{
     padding: 0 20px;
     overflow: hidden;
     text-align: center;
-    /* filter: brightness(1.1); */
-    /* mix-blend-mode: multiply; */
 }
 
 /* Productos */
@@ -289,6 +289,7 @@ footer h3{
 }
 
 nav label,nav input{
+    cursor: pointer;
     display: none;
     filter: brightness(110%);
 }
@@ -302,10 +303,14 @@ nav{
     filter: brightness(110%);
 }
 
+.card:hover{
+
+    filter: brightness(110%);
+    z-index: -1;
+}
 
 /* MEDIAS QUERIES */
 @media (max-width: 1280px) {
-
     nav{
         margin-top: 40px;
     }
@@ -328,6 +333,8 @@ nav{
     }
 
     nav label {
+    /* animation: rotate 4s infinite linear; */
+    /* animation-name: burger; */
     box-sizing: border-box;
     display: inline-block;
     color: #f0b953;
