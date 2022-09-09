@@ -43,36 +43,37 @@
         <!-- MAIN -->
         <main>
             <!-- SECCION CONTACTO -->
-            <section class="contact">
+            <section class="container contact">
                 <h1 class="title">Contactanos</h1>
                 <!-- FORMULARIO -->
-                <form action="#" class="contact-form">
-                    <!-- CAMPOS A COMPLETAR -->
-                    <label for="name">Nombre y Apellido:
-                        <input class="contact__input" type="text" placeholder="Nombre y Apellido"/><br/>
-                    </label>
-                    <label for="email">Correo:
-                        <input class="contact__input"  type="email" placeholder="user@domain.com" name="email"/><br/>
-                    </label>
-                    <label for="consulta"> Tu consulta:<br/>
-                        <textarea class="contact__input"  placeholder="Consulta"></textarea>
-                    </label> <br/>
-                    <!-- SELECCION -->
-                    <div><p>Tipo de consulta:</p>
-                        <div>Venta
-                            <input class="contact__input"  type="radio" name="lado" value="vta"/>
-                        </div>
-                        <div>Soporte tecnico
-                            <input class="contact__input"  type="radio" name="lado" value="st"/>
-                        </div><br/>
+                <form>
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Nombre y Apellido:</label>
+                        <input type="user" class="form-control" id="user" aria-describedby="emailHelp">
                     </div>
-                    <input type="submit" value="ENVIAR">
-                    <input type="reset" value="RESETEAR">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="consult" class="form-label">Tu consulta:</label>
+                        <textarea class="form-control" id="consult" rows="8"></textarea>
+                    </div>
+                    <div>Venta
+                        <input class="contact__input"  type="radio" name="lado" value="vta"/>
+                    </div>
+                    <div>Soporte tecnico
+                        <input class="contact__input"  type="radio" name="lado" value="st"/>
+                    </div><br/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ENVIAR</button>
+                    <button type="reset" class="btn btn-primary">RESETEAR</button>
                 </form>
             </section>
         </main>
         <!-- FOOTER -->
-        <footer class="bg-dark h-auto position-absolute fixed-bottom">
+        <footer class="bg-dark h-auto position-fixed fixed-bottom">
             <div class="container p-4">    
                 <a class="text-center" href="./contact.html"><h3>Contactanos</h3></a>
                 <div class="d-flex align-items-center justify-content-center">    
