@@ -6,64 +6,87 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href="../assets/images/favicon-32x32.png"/>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/animate.css">
-        <title>Servicios</title>
-    </head>
+
+        <!-- CSS  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+
+        <!-- JavaScript  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Animaciones -->
+        <link rel="stylesheet" href="../css/animate.css"/>
+
+        <title>Casa Central Website</title>
     <!-- BODY -->
     <body class="animated fadeIn">
         <!-- HEADER -->
-        <header class="header">
-            <div class="header__content">
-            <a href="../index.html"><img class="header__content-logo animated swing" src="../assets/images/logo-nombre.jpg" alt="LOGO"/></a>
+        <header class="bg-dark h-auto sticky-top">
             <!-- BARRA DE NAVEGACION -->
-                <nav>
-                    <input type="checkbox" id="burger-menu">
-                    <label for="burger-menu" class="animated bounceInDown"> ☰ </label>
-                    <ul class="header__content-navbar animated bounceInDown">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./service.html">Servicios</a></li>
-                        <li><a href="./product.html">Productos</a></li>
-                        <li><a href="./location.html">Ubicación</a></li>
-                        <li><a href="./contact.html">Contacto</a></li>
-                        <li><a href="./about-us.html">Sobre nosotros</a></li>
+            <nav class="container navbar navbar-expand-xl navbar-dark d-flex justify-content-between p-4">
+                <a href="../index.html"><img class="navbar-brand header__content-logo animated swing" src="../assets/images/logo-nombre.jpg" alt="LOGO"/></a>
+                <button class="navbar-toggler  animated bounceInDown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end animated animated bounceInDown" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active text-end" aria-current="page" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active text-end" aria-current="page" href="./service.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link active text-end" aria-current="page" href="./product.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link active text-end" aria-current="page" href="./location.html">Ubicación</a></li>
+                        <li class="nav-item"><a class="nav-link active text-end" aria-current="page" href="./contact.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active text-end" aria-current="page" href="./about-us.html">Sobre nosotros</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </header>
         <!-- MAIN -->
         <main>
             <!-- BANNER DE SERVICIOS-->
             <h1 class="title">Servicios</h1>
-            <section class="banner-featured">
-                <article class="card">
-                    <img class="card__header-img" src="../assets/images/service.JPG" alt="Accesorios"/>
-                </article>
-                <article class="card">
-                    <img class="card__header-img" src="../assets/images/service2.JPG" alt="Accesorios" />
-                </article>
-                <article class="card">
-                    <img class="card__header-img" src="../assets/images/service3.JPG" alt="Accesorios"/>
-                </article>
-                <article class="card">
-                    <img class="card__header-img" src="../assets/images/service4.JPG" alt="Accesorios" />
-                </article>
-                <article class="card">
-                    <img class="card__header-img" src="../assets/images/service5.JPG" alt="Accesorios" />
-                </article>
-            </section>
+            <div id="carouselExampleControls" class="carousel slide container-xxl" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-4">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/service.JPG" class="d-block w-100 h-50" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/service2.JPG" class="d-block w-100 h-50" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/service3.JPG" class="d-block w-100 h-50" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/service4.JPG" class="d-block w-100 h-50" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/service5.JPG" class="d-block w-100 h-50" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </main>
         <!-- FOOTER -->
-        <footer class="footer">
-            <a href="./contact.html"><h3>Contactanos</h3></a>
-            <img class="footer__logo" src="../assets/images/logo.jpg" alt="LOGO"/>
-            <ul class="footer__contact">
-                <li>@casacentralst</li>
-                <li>#0351 867-1488</li>
-                <li>Dean Funes 52 - Galería Pasaje Central Local G10.</li>
-                <li>Córdoba, Argentina.</li>
-                <li>Lun a Vie 09:00 - 18:00hs Sab 09:00 - 13:00hs</li>
-            </ul>
-        </footer>
+        <footer class="bg-dark h-auto position-absolute fixed-bottom">
+            <div class="container p-4">    
+                <a class="text-center" href="./contact.html"><h3>Contactanos</h3></a>
+                <div class="d-flex align-items-center justify-content-center">    
+                    <img class="footer__logo" src="../assets/images/logo.jpg" alt="LOGO"/>
+                    <ul class="footer__contact">
+                            <li class="text-white list-unstyled">@casacentralst</li>
+                            <li class="text-white list-unstyled">#0351 867-1488</li>
+                            <li class="text-white list-unstyled">Dean Funes 52 - Galería Pasaje Central Local G10.</li>
+                            <li class="text-white list-unstyled">Córdoba, Argentina.</li>
+                            <li class="text-white list-unstyled">Lun a Vie 09:00 - 18:00hs Sab 09:00 - 13:00hs</li>
+                    </ul>
+                </div>
+            </div>
+        </footer> 
     </body>
 </html>
