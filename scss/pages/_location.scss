@@ -1,16 +1,15 @@
 /* Ubicacion */
 
 .location{
-    padding: 0 20px;
+    @include tempPadAlign(false, false);
     margin-bottom: 50px;
     justify-content: center;
     align-items: center;
-    text-align: center;
 
-    &__ig{
-        width:320;
-        height:450;
-    }
+    // &__ig{
+    //     width:320;
+    //     height:450;
+    // }
 
     &__google{
         width:100%;
@@ -18,13 +17,5 @@
     }
 }
 
-.panel {
-    z-index: -1;
-    overflow: hidden;
-    padding: 20px;
-    background-color: $colorCardPanelBG;
-    border: $colorCardPanelBR;
-    border-radius: 20px;
-    box-shadow: 0px 20px 50px -12px $colorCardPanelBX;
-}
+
 

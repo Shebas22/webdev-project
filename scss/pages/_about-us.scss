@@ -1,15 +1,12 @@
 /* Sobre nosotros */
 
 .aboutus{
-    padding: 0 20px;
+    @include tempPadAlign(false, false);
     overflow: hidden;
-    text-align: center;
 
     &__img{
         width: 75%;
         height: 50%;
-        /* filter: brightness(1.1);
-        mix-blend-mode: multiply; */
 
         &:hover{
             filter: saturate(180%);

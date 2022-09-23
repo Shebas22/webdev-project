@@ -5,7 +5,11 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="shortcut icon" href="../assets/images/favicon-32x32.png"/>
+        <link rel="shortcut icon" href="../assets/images/favicon.png"/>
+
+        <meta name="description" content="Casa Central es una empresa dedicada a la comercialización y reparación de productos de informática y Telefonía móvil (Smartphones).
+        Contamos con personal altamente capacitado que nos permite brindar un servicio de calidad"/>
+        <meta name="keywords" content="insumos, venta, reparación, smartphones, informática, soporte, servicio técnico"/>    
         
         <!-- Animaciones -->
         <link rel="stylesheet" href="../css/animate.css"/>
@@ -15,7 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
         <link rel="stylesheet" href="../css/style.css"/>
         
-        <title>Casa Central Website</title>
+        <title>Casa Central - Servicio tecnico y Venta de insumos Smartphones e Informatica</title>
     </head>
         <!-- BODY -->
     <body class="animated fadeIn">
@@ -45,7 +49,7 @@
                 <h1 class="title">Productos</h1>
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-6">
-                        <article class="card">
+                        <article class="card p-4">
                             <img class="card__header-img" src="../assets/images/accesorios_tel.jpg" alt="Accesorios"/>
                             <div class="card__header">
                                 <h2 class="card__title">Accesorios</h2>
@@ -60,7 +64,7 @@
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
-                        <article class="card">
+                        <article class="card p-4">
                             <img class="card__header-img" src="../assets/images/repuestos_tel.jpg" alt="Repuestos"/>
                             <div class="card__header">
                                 <h2 class="card__title">Repuestos</h2>
@@ -74,7 +78,7 @@
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
-                        <article class="card">
+                        <article class="card p-4">
                             <img class="card__header-img" src="../assets/images/insumos_inf.png" alt="Insumos Informatica"/>
                             <div class="card__header">
                                 <h2 class="card__title">Insumos Informatica</h2>
@@ -88,7 +92,7 @@
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
-                        <article class="card">
+                        <article class="card p-4">
                             <img class="card__header-img" src="../assets/images/insumos_tel.jpg" alt="Insumos Telefonia"/>
                             <div class="card__header">
                                 <h2 class="card__title">Insumos Telefonia</h2>
@@ -97,6 +101,7 @@
                                     <li>Herramientas</li>
                                     <li>Cables</li>
                                     <li>Cargadores</li>
+                                    <li>Smartphones</li>
                                 </ul>
                             </div>
                         </article>
@@ -104,10 +109,14 @@
                 </div>
             </section>
             <!-- SECCION MEDIOS DE PAGO -->
-            <section class="pay">
-                <h2>Medios de pago</h2>
-                <img src="../assets/images/visa.png" alt="logo-visa" width="100">
-                <img src="../assets/images/credito.png" alt="logo-cred" width="100">
+            <section class="pay container mt-5 card h-auto">
+                <h2 class="text-center p-4">Medios de pago</h2>
+                <div class="col-12 d-flex justify-content-evenly container">
+                    <img src="../assets/images/visa.svg" alt="logo-visa" class="w-100 p-4 pay__resource">
+                    <img src="../assets/images/master.svg" alt="logo-master" class="w-100 p-4 pay__resource">
+                    <img src="../assets/images/mp.svg" alt="logo-mercadopago" class="w-100 p-4 pay__resource">
+                    <img src="../assets/images/naranja.svg" alt="logo-naranja" class="w-100 p-4 pay__resource">
+                </div>
             </section>
         </main>
         <!-- FOOTER -->
@@ -115,17 +124,14 @@
             <div class="container p-4 footer__content"> 
                 <a class="text-center" href="./pages/contact.html"><h3>Contactanos</h3></a>
                 <div class="container row gy-4 align-items-center">
-                    <div class="col-12 col-md-6 text-center footer__content-links d-flex justify-content-evenly p-4">
-                        <!-- <img class="footer__logo m-2" src="./assets/images/logo.jpg" alt="LOGO"/> -->
-                        <!-- <div class="d-inline"> -->
-                            <a href="https://wa.me/543518671488" target="_blank" class=" animated fadeIn" ><i class="bi bi-whatsapp text-white fs-1 m-2"></i></a>
-                            <a href="https://www.facebook.com/casacentralst" target="_blank" class=" animated fadeIn"><i class="bi bi-facebook text-white fs-1 m-2"></i></a>
-                            <a href="https://www.instagram.com/casacentralst/" target="_blank" class=" animated fadeIn"><i class="bi bi-instagram text-white fs-1 m-2"></i></a>
-                        <!-- </div> -->
+                    <div class="col-12 col-md-6 text-center d-flex justify-content-evenly p-4 footer__content-rrss animated fadeIn">
+                        <a href="https://wa.me/543518671488" target="_blank" class="rs-whatsapp" ><i class="bi bi-whatsapp fs-1 m-2"></i></a>
+                        <a href="https://www.facebook.com/casacentralst" target="_blank" class="rs-facebook"><i class="bi bi-facebook fs-1 m-2"></i></a>
+                        <a href="https://www.instagram.com/casacentralst/" target="_blank" class=" rs-instagram"><i class="bi bi-instagram fs-1 m-2"></i></a>
                     </div>
                     <div class="col-12 col-md-6 text-center footer__content-info">
                         <ul class="footer__contact">
-                            <li class="text-white list-unstyled">@casacentralst</li>
+                            <li class="text-white list-unstyled"><b>Ventas y Soporte técnico</b></li>
                             <li class="text-white list-unstyled">#0351 867-1488</li>
                             <li class="text-white list-unstyled">Dean Funes 52 - Galería Pasaje Central Local G10.</li>
                             <li class="text-white list-unstyled">Córdoba, Argentina.</li>

@@ -1,5 +1,13 @@
 $colorLink: #f0b953;
-$colorLinkH: #ac843c;
+$colorLinkH: #bd9f66;
 $colorCardPanelBG: rgba(49, 91, 160, 0.418);
 $colorCardPanelBR: rgba(117, 125, 161, 0.4) solid;
 $colorCardPanelBX: rgba(53, 94, 89, 0.6);
+$breakPointL: 1280px;
+$breakPointS: 767px;
+$bodyMinWidth: 420px;
+$transition: all 0.4s;
+$transitionNav: transform 0.5s ease-in-out;
+$fontLarge: 50px;
+$fontMed: $fontLarge - 15;
+$fontSmall: $fontLarge - 30;

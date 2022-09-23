@@ -1,12 +1,36 @@
 /* FOOTER */
-footer{
+.footer{
     bottom: 0;
+
+    &__content-rrss {
+        // mapa
+        $iconRedSocial: (
+            whatsapp: #25D366,
+            instagram: #c92d8f,
+            facebook: #2279e4,
+        );
+    
+        // each
+        @each $nameRedSocial, $colorIcon in $iconRedSocial {
+            .rs-#{$nameRedSocial} {
+                color: aliceblue;
+                transition: $transition;
+        
+                &:hover {
+                    color: $colorIcon;
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
 }
+
+
 
 /* MEDIAS QUERIES */
 
 /*vista mobile*/
-@media only screen and (min-width:0px) and (max-width:767px){
+@media only screen and (min-width:0px) and (max-width:$breakPointS){
 
     .footer__content-info{
         display: none;

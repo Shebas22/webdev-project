@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://shebas22.github.io/webdev-project/sitemap.xml
