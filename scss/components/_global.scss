@@ -42,6 +42,7 @@ body {
     background-image: linear-gradient(#c6ceca,rgb(84, 72, 99));
 }
 
+
 .carousel-control{
     &-next-icon{
         filter: invert(100%);
@@ -122,6 +123,17 @@ p{/* parrafos */
     max-width: 1000px;
 }
 
+.whatsapp {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    
+    &__icon{
+        font-size: 50pt;
+    }
+}
+
+
 
 /* MEDIAS QUERIES */
 
@@ -138,5 +150,9 @@ p{/* parrafos */
 
     .card__header{
         // margin: 0 10px;
+    }
+
+    .whatsapp {
+        display: none;
     }
 }

@@ -10,7 +10,7 @@ _Puedes descargar los archivos comprimidos y luego extraerlos localmente, solo r
 
 ## Construido con 🛠️
 
-* [Visual Studio Code](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
+* [Visual Studio Code](http://www.dropwizard.io/1.0.2/docs/) - Bootstrap
 
 
 ## Autor ✒️
