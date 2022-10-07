@@ -29,6 +29,11 @@
 
     &__resource{
         max-width: 150px;
+        transition: $transition;
+        
+        &:hover {
+            transform: scale(1.3);
+        }
     }
 }
 

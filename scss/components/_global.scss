@@ -39,7 +39,7 @@ a:visited {color: $colorLink; font-size: 22pt; text-decoration: none; cursor: po
 
 body {
     min-width: $bodyMinWidth;
-    background-image: linear-gradient(#c6ceca,rgb(84, 72, 99));
+    background-image: $background;
 }
 
 

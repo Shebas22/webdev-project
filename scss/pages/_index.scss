@@ -1,4 +1,11 @@
+/* Index */
 .img__container{
     max-width:100%; 
     width:100%;
+    transition: $transition;
+        
+    &:hover {
+        transform: scale(1.1);
+    }
 }
+
